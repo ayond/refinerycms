@@ -16,18 +16,14 @@ class PagesController < ApplicationController
   #   GET /about/mission
   #
   def show
-    @page = Page.find("#{params[:path]}/#{params[:id]}".split('/').last)
 
-    if @page.try(:live?) || (refinery_user? && current_user.authorized_plugins.include?("refinery_pages"))
-      # if the admin wants this to be a "placeholder" page which goes to its first child, go to that instead.
-      if @page.skip_to_first_child && (first_live_child = @page.children.order('lft ASC').live.first).present?
-        redirect_to first_live_child.url and return
-      elsif @page.link_url.present?
-        redirect_to @page.link_url and return
-      end
-    else
-      error_404
+    if !(params[:path] =~ /(.*)web(.*)/) and !(params[:path] =~ /intra/)
+      redirect_to "/intra/#{params[:path]}/#{params[:id]}"
+    elsif (params[:path] =~ /(.*)web(.*)/) and !(params[:path] =~ /intra/)
+      #last = "#{params[:path]}/#{params[:id]}".split('/').last
+      redirect_to "/web/#{params[:path]}/#{params[:id]}"
     end
+
   end
 
 end

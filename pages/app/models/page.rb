@@ -319,13 +319,16 @@ class Page < ActiveRecord::Base
   #    Page.first.content_for(:body)
   #
   # Will return the body page part of the first page.
-  def content_for(part_title)
+  def content_for(part_title, locale=nil)
     part = self.parts.detect do |part|
       part.title.present? and #protecting against the problem that occurs when have nil title
       part.title == part_title.to_s or
       part.title.downcase.gsub(" ", "_") == part_title.to_s.downcase.gsub(" ", "_")
     end
-
+    unless locale.nil?
+      part_trans = part.translations.where(:locale=>locale).first
+      part = part_trans unless part_trans.nil?
+    end
     part.try(:body)
   end
 
