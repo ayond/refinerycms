@@ -319,7 +319,7 @@ class Page < ActiveRecord::Base
   #    Page.first.content_for(:body)
   #
   # Will return the body page part of the first page.
-  def content_for(part_title, locale=nil)
+  def content_for(part_title, locale)
     part = self.parts.detect do |part|
       part.title.present? and #protecting against the problem that occurs when have nil title
       part.title == part_title.to_s or
@@ -343,7 +343,7 @@ class Page < ActiveRecord::Base
       :caller => caller
     })
 
-    content_for(part_title)
+    content_for(part_title,nil)
   end
 
   # In the admin area we use a slightly different title to inform the which pages are draft or hidden pages
