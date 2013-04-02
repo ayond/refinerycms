@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.require_paths     = %w(lib)
   s.executables       = %w()
 
-  s.add_dependency 'refinerycms-base',            '= 1.0.9'
-  s.add_dependency 'refinerycms-settings',        '= 1.0.9'
+  s.add_dependency 'refinerycms-base',            '= 1.0.9.mrcap'
+  s.add_dependency 'refinerycms-settings',        '= 1.0.9.mrcap'
   s.add_dependency 'refinerycms-generators',      '~> 1.0'
   s.add_dependency 'acts_as_indexed',             '~> 0.7'
   s.add_dependency 'friendly_id_globalize3',      '~> 3.2.1'

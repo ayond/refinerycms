@@ -91,7 +91,7 @@ Gem::Specification.new do |s|
     'spec/uploads/refinery_is_awesome.txt'
   ]
 
-  s.add_dependency 'refinerycms-core', '= 1.0.9'
+  s.add_dependency 'refinerycms-core', '= 1.0.9.mrcap'
   s.add_dependency 'activerecord',     '~> 3.0.10'
   s.add_dependency 'dragonfly',        '~> 0.9.0'
   s.add_dependency 'rack-cache',       '>= 0.5.3'

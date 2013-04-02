@@ -74,5 +74,5 @@ Gem::Specification.new do |s|
     'refinerycms-dashboard.gemspec'
   ]
 
-  s.add_dependency 'refinerycms-core', '= 1.0.9'
+  s.add_dependency 'refinerycms-core', '= 1.0.9.mrcap'
 end

@@ -19,14 +19,14 @@ Gem::Specification.new do |s|
   s.add_dependency    'bundler',                    '~> 1.0'
 
   # Refinery CMS
-  s.add_dependency    'refinerycms-authentication', '= 1.0.9'
-  s.add_dependency    'refinerycms-base',           '= 1.0.9'
-  s.add_dependency    'refinerycms-core',           '= 1.0.9'
-  s.add_dependency    'refinerycms-dashboard',      '= 1.0.9'
-  s.add_dependency    'refinerycms-images',         '= 1.0.9'
-  s.add_dependency    'refinerycms-pages',          '= 1.0.9'
-  s.add_dependency    'refinerycms-resources',      '= 1.0.9'
-  s.add_dependency    'refinerycms-settings',       '= 1.0.9'
+  s.add_dependency    'refinerycms-authentication', '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-base',           '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-core',           '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-dashboard',      '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-images',         '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-pages',          '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-resources',      '= 1.0.9.mrcap'
+  s.add_dependency    'refinerycms-settings',       '= 1.0.9.mrcap'
 
   s.files             = [
     '.gitignore',

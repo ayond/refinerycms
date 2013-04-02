@@ -121,7 +121,7 @@ Gem::Specification.new do |s|
     'spec/models/page_spec.rb'
   ]
 
-  s.add_dependency 'refinerycms-core',            '= 1.0.9'
+  s.add_dependency 'refinerycms-core',            '= 1.0.9.mrcap'
   s.add_dependency 'activerecord',                '~> 3.0.10'
   s.add_dependency 'friendly_id_globalize3',      '~> 3.2.1'
   s.add_dependency 'globalize3',                  '~> 0.1'

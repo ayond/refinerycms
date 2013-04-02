@@ -88,5 +88,5 @@ Gem::Specification.new do |s|
     'spec/models/refinery_setting_spec.rb'
   ]
 
-  s.add_dependency 'refinerycms-base', '= 1.0.9'
+  s.add_dependency 'refinerycms-base', '= 1.0.9.mrcap'
 end
