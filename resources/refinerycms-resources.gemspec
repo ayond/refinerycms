@@ -84,7 +84,6 @@ Gem::Specification.new do |s|
     'license.md',
     'refinerycms-resources.gemspec',
     'spec',
-    'spec/lib',
     'spec/models',
     'spec/models/resource_spec.rb',
     'spec/uploads',

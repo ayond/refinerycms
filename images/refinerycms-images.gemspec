@@ -91,7 +91,6 @@ Gem::Specification.new do |s|
     'license.md',
     'refinerycms-images.gemspec',
     'spec',
-    'spec/lib',
     'spec/models',
     'spec/models/image_spec.rb',
     'spec/uploads',
