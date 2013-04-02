@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name              = %q{refinerycms-images}
-  s.version           = %q{1.0.9}
+  s.version           = %q{1.0.9.mrcap}
   s.summary           = %q{Images engine for Refinery CMS}
   s.description       = %q{Handles all image upload and processing functionality in Refinery CMS.}
   s.date              = %q{2011-11-05}
