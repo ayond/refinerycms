@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths     = %w(lib)
   s.executables       = %w()
 
-  s.add_dependency 'refinerycms-core', '= 1.0.9'
+  s.add_dependency 'refinerycms-core', '= 1.0.9.mrcap'
 
   # RSpec
   s.add_dependency 'rspec-rails',       '~> 2.6'
