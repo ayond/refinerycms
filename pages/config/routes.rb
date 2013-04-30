@@ -1,7 +1,7 @@
 ::Refinery::Application.routes.draw do
   get '/intra/pages/:id', :to => 'pages#show', :as => :page
 
-  scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
+  scope(:path => 'admin', :as => 'admin', :module => 'admin') do
     resources :pages, :except => :show do
       collection do
         post :update_positions
