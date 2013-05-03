@@ -52,7 +52,7 @@
   <% if current_user.has_role?(:superuser) and RefinerySetting.find_or_set(:superuser_can_assign_roles, false) %>
     <div class='field role_access'>
       <span class='label_with_help'>
-        <%= f.label :role_access, t('.role_access'), :class => "title_label" %>
+        <%= f.label :role_access, "#{t('.role_access')} ('refinery' and 'superuser' are default roles for site administrators)", :class => "title_label" %>
       </span>
       <ul id='roles' class='checkboxes'>
         <% @available_roles.each do |role|
